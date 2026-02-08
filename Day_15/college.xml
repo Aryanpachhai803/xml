@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Students [
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (Name, faculty, batch, contact, address)>
+<!ELEMENT Name (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT batch (#PCDATA)>
+<!ELEMENT contact (home,mobile)>
+<!ELEMENT home (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT address (temp,perm)>
+<!ELEMENT temp (#PCDATA)>
+<!ELEMENT perm (#PCDATA)>
+<!ATTLIST Students college CDATA #FIXED "Nepathya">
+<!ATTLIST Student id CDATA #REQUIRED >
+]>
+
+<Students college="Nepathya">
+    <Student id="001">
+        <Name>
+            <firstName>Aryan</firstName>
+            <lastName>pachhai</lastName>
+        </Name>
+        <faculty>BCA</faculty>
+        <batch>2081</batch>
+        <contact>
+            <home>9834273432</home>
+            <mobile>9869696969</mobile>
+        </contact>    
+        <address>
+            <temp>Manigram</temp>
+            <perm>Butwal</perm>
+        </address>
+    </Student>
+
+    <Student id="002">
+        <Name>
+            <firstName>Amar</firstName>
+            <lastName>Thapa</lastName>
+        </Name>
+        <faculty>BCA</faculty>
+        <batch>2081</batch>
+        <contact>
+            <home>94983893283</home>
+            <mobile>9832636363</mobile>
+        </contact>    
+        <address>
+            <temp>Palpa</temp>
+            <perm>Manigram</perm>
+        </address>
+    </Student>
+
+    <Student id="003">
+        <Name>
+            <firstName>Sandesh</firstName>
+            <lastName>Thapa</lastName>
+        </Name>
+        <faculty>BCSIT</faculty>
+        <batch>2078</batch>
+        <contact>
+            <home>98437637233</home>
+            <mobile>98366237623</mobile>
+        </contact>    
+        <address>
+            <temp>Manigram</temp>
+            <perm>Sydney</perm>
+        </address>
+    </Student>
+</Students>

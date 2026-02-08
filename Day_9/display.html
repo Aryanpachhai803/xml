@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        p:first-child{
+            height: 3rem;
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+            background-color: green;
+        }
+        p:nth-child(2){
+            height: 3rem;
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+            background-color: blue;
+        }
+        p:nth-child(3){
+            height: 3rem;
+            /* flex-grow: 3; */
+            flex-shrink: 1;
+            background-color: yellow;
+        }
+        p:last-child{
+            height: 3rem;
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hello</p>
+        <p>My</p>
+        <p>Lovely</p>
+        <p>World</p>
+    </div>
+</body>
+</html>

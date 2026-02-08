@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            text-align: center;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 15rem;
+            height: 12rem;
+            padding: 2rem;
+        }
+        h1{
+            color: red;
+        }
+        #password{
+            margin-top: 1rem;
+        }
+        .btn{
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: red;
+        }
+        .signup{
+            padding: 0.5rem;
+        }
+        .signup:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+        <h1>Login</h1>
+        <label for=""></label>
+        <input type="text" placeholder="Enter your username" id="username">
+
+        <label for=""></label>
+        <input type="password" placeholder="Enter your password" id="password">
+
+        <button class="btn">Login</button>
+
+        <a href="" class="signup">Sign up?</a>
+        </div>
+    </form>
+</body>
+</html>

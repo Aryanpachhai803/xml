@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE books System "books.dtd">
+
+<books>
+    <book>
+        <category>A</category>
+        <name>A</name>
+        <author>A</author>
+        <publisher>A</publisher>
+    </book>
+    <book>
+        <category>B</category>
+        <name>B</name>
+        <author>B</author>
+        <publisher>B</publisher>
+    </book>
+    <book>
+        <category>C</category>
+        <name>C</name>
+        <author>C</author>
+        <publisher>C</publisher>
+    </book>
+</books>

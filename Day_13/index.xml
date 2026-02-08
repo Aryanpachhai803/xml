@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE College System "college.dtd">
+
+<College name="Nepathya">
+    <Student>
+        <Name>
+            <firstName>Aryan</firstName>
+            <lastName>Pachhai</lastName>
+        </Name>
+        <Contact>9869696969</Contact>
+        <Email>aryanpachhai@gmail.com</Email>
+        <Address>
+            <Country>Nepal</Country>
+            <District>Rupandehi</District>
+            <MP></MP>
+            <GP></GP>
+        </Address>
+    </Student>
+</College>

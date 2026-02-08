@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <script src="https://kit.fontawesome.com/d2e4a19f8c.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: serif;
+            min-height: 100vh;
+        }
+
+        /*----------------Navigation Bar-------------------*/
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background: black;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 2rem;
+            max-width: 1600px;
+        }
+
+        .navbar-logo {
+            font-size: 2rem;
+            font-weight: 600;
+            color: grey;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar-search {
+            border-radius: 50px;
+        }
+
+        .navbar-container .navbar-menu {
+            display: flex;
+            text-align: center;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .navbar-container .navbar-menu li a {
+            text-decoration: none;
+            color: grey;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 3px 20px;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            transition: all 0, 7s ease;
+            white-space: nowrap;
+        }
+
+        .navbar-container .navbar-menu li a:hover,
+        .navbar-container .navbar-menu li a.active {
+            color: grey;
+            background: rgba(188, 212, 229, 0.8);
+            border: 2px solid grey;
+        }
+
+        .navbar-toggle {
+            display: none;
+            background: transparent;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media(max-width: 880px) {
+            .navbar {
+                backdrop-filter: none;
+            }
+
+            .navbar-container .navbar-menu {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.7rem;
+                position: absolute;
+                height: 100vh;
+                width: 250px;
+                top: 0;
+                right: 0;
+                padding: 5rem 1.5rem;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(10px);
+            }
+
+            .navbar-container .navbar-menu.active {
+                display: flex;
+            }
+
+            .navbar-toggle {
+                display: block;
+                z-index: 10;
+            }
+        }
+
+        @media(max-width:480px) {
+            .navbar-container {
+                padding: 0 1rem;
+            }
+
+            .navbar-logo {
+                font-size: 1.7rem;
+            }
+
+            .navbar-container .navbar-menu li a {
+                font-size: 1.2rem;
+                padding: 3px 15px;
+            }
+        }
+
+        .first-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "one two three";
+            gap: 0.5rem;
+        }
+        .first-section div {
+            height: 250px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .short-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "one two three four five";
+            gap: 0.1rem;
+            padding: 30px;
+
+        }
+        .short-section div{
+            height: 350px;
+            width: 280px;
+            border-radius: 10px;
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Youtube</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-search">
+                <input type="text" name="search" id="" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="first-section">
+        <div style="grid-area: one">1</div>
+        <div style="grid-area: two">2</div>
+        <div style="grid-area: three">3</div>
+    </section>
+
+    <section class="short-section">
+        <div style="grid-area: one">1</div>
+        <div style="grid-area: two">2</div>
+        <div style="grid-area: three">3</div>
+        <div style="grid-area: four">4</div>
+        <div style="grid-area: five">5</div>
+    </section>
+
+    <script>
+        const navbarToggle = document.querySelector(".navbar-toggle");
+        const navbarMenu = document.querySelector(".navbar-menu");
+
+        navbarToggle.addEventListener('click', () => {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

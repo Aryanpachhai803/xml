@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE College [
+<!ELEMENT College (Student+)>
+<!ELEMENT Student (Name,Contact,Email,Address)>
+<!ELEMENT Name (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT Contact (#CDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Address (Country,District,(MP/GP))>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT District (#PCDATA)>
+<!ELEMENT MP (#PCDATA)>
+<!ELEMENT GP (#PCDATA)>
+]>
+<!-- 
+<College>
+    <Student>
+        <Name>
+            <firstName>Aryan</firstName>
+            <lastName>Pachhai</lastName>
+        </Name>
+        <Contact>9869696969</Contact>
+        <Email>aryanpachhai@gmail.com</Email>
+        <Address>
+            <Country>Nepal</Country>
+            <District>Rupandehi</District>
+            <MP></MP>
+            <GP></GP>
+        </Address>
+    </Student>
+</College> -->

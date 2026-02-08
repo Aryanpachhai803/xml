@@ -1,0 +1,8 @@
+<!DOCTYPE books[
+<!ELEMENT books(book+)>
+<!ELEMENT book(category,name,author,publisher)>
+<!ELEMENT category(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+<!ELEMENT publisher(#PCDATA)>
+]>
