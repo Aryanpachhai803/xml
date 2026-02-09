@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college>
+    <name>Nepathya</name>
+    <heading>Faculty</heading>
+
+    <faculty>
+        <name>BCA</name>
+    </faculty>
+    <faculty>
+        <name>CSIT</name>
+    </faculty>
+</college>    
