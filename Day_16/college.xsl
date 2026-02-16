@@ -16,7 +16,7 @@
                             <xsl:value-of select="name" />
                         </li>
                     </xsl:for-each>
-                </u>
+                </ul>
             </body>
         </html>
     </xsl:template>

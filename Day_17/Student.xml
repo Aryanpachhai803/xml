@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8">
 <!DOCTYPE books System "Student.dtd">
+<?xml-stylesheet type="text/xsl" hred="Student.xsl"?>
 <Student>
     <username>Hello_1</username>
 
