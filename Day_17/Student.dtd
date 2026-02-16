@@ -1,0 +1,11 @@
+<!DOCTYPE Student[
+<!ELEMENT Student(username,name,email,mobile,age,faculty)>
+<!ELEMENT username(#PCDATA)>
+<!ELEMENT name(firstName,lastName)>
+<!ELEMENT firstName(#PCDATA)>
+<!ELEMENT lastName(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT mobile(#PCDATA)>
+<!ELEMENT age(#PCDATA)>
+<!ELEMENT faculty(#PCDATA)>
+]>
