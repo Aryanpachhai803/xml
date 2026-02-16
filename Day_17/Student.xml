@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8">
+<Student>
+    <username>Hello_1</username>
+    
+    <name>
+        <firstName>Aryan</firstName>
+        <lastName>Pachhai</lastName>
+    </name>
+
+    <email>aryanpachhai@gmail.com</email>
+
+    <mobile>9832424323</mobile>
+    
+    <age>19</age>
+    
+    <faculty>BCA</faculty>
+</Student> 
