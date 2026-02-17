@@ -1,0 +1,9 @@
+<!DOCTYPE Student[
+<!ELEMENT staff (employee+)>
+<!ELEMENT employee (name, department, position, salary)>
+<!ATTLIST employee id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
