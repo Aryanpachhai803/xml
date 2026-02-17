@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE staff SYSTEM "staff.dtd">
+<?xml-stylesheet type="text/xsl" href="staff.xsl"?>
+
+<staff>
+    <employee id="E1">
+        <name>Alex</name>
+        <department>HR</department>
+        <position>Manager</position>
+        <salary>45000</salary>
+    </employee>
+
+    <employee id="E2">
+        <name>Rohan</name>
+        <department>IT</department>
+        <position>Developer</position>
+        <salary>85000</salary>
+    </employee>
+</staff>
