@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="employees.xsd">
+    
+    <employee id="E1">
+        <name>Sangit</name>
+        <department>IT</department>
+        <designation>Software Engineer</designation>
+        <salary>90000</salary>
+    </employee>
+
+    <employee id="E2">
+        <name>Sanket</name>
+        <department>HR</department>
+        <designation>HR Manager</designation>
+        <salary>69000</salary>
+    </employee>
+</employees>
