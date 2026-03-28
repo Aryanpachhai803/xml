@@ -1,0 +1,11 @@
+<!DOCTYPE staff[
+<!ELEMENT staff (employee+)>
+
+<!ELEMENT employee (name, department, position, salary)>
+<!ATTLIST employee id CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
